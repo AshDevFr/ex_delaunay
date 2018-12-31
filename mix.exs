@@ -25,4 +25,21 @@ defmodule Delaunay.MixProject do
       # {:dep_from_git, git: "https://github.com/elixir-lang/my_dep.git", tag: "0.1.0"},
     ]
   end
+
+  defp description do
+    """
+    Library for Delaunay triangulation of 2D points.
+    """
+  end
+
+  defp package do
+    [
+      files: ["lib", "mix.exs", "README*", "LICENSE*"],
+      maintainers: ["Sylvain Cau"],
+      licenses: ["MIT"],
+      links: %{
+        "GitHub" => "https://github.com/AshDevFr/ex_delaunay"
+      }
+    ]
+  end
 end
