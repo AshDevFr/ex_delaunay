@@ -29,7 +29,17 @@ defmodule Delaunay do
   ]
 
   @doc """
+    Delaunay triangulation of points
 
+    points is an array of tuples: `[{x, y}, ...]`
+
+    ## Examples
+      iex> points |> Delaunay.from
+      %Delaunay{
+        ...
+        triangles: [1, 18, 5, 1, 3, 18, 1, 29, 3, 3, 29, 18, ...],
+        ...
+      }
   """
   def from(points) do
     n = length(points)
